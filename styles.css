@@ -1,0 +1,131 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-color: #E3E1D5; /* Light Beige background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    color: #4B4B4B; /* Darker accent color for text */
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="date"], select, button {
+    padding: 20px;
+    border: 1px solid #A6A6A6; /* Light Grey border */
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #DCD3C3; /* Soft Taupe background */
+    color: #4B4B4B; /* Darker text for readability */
+}
+
+input[type="text"], select {
+    flex: 1;
+}
+
+button {
+    background-color: #DCD3C3; /* Muted Olive background */
+    cursor: pointer;
+    width: 100px; /* Adjust width */
+}
+
+button:hover {
+    background-color: #CFC3AF; /* Pale Brown background on hover */
+}
+
+.task-tables {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.task-tables > div {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.task-tables h2 {
+    text-align: center;
+    color: #4B4B4B; /* Darker accent color for text */
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #DFCBB6; /* Cream */
+}
+
+.task-tables h2:nth-child(2) {
+    background-color: #E3E1D5; /* Light Beige */
+}
+
+.task-tables h2:nth-child(3) {
+    background-color: #DCD3C3; /* Soft Taupe */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #E5EDDA; /* Very Light Green background */
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #4B4B4B; /* Darker text for readability */
+    width: 100%;
+}
+
+li span {
+    flex: 1;
+    margin-right: 10px;
+    white-space: nowrap; /* Prevent line break */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handle overflow */
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    background-color: #B1AE9B; /* Muted Olive background */
+    border: none;
+    color: #4B4B4B;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+li button:hover {
+    background-color: #CFC3AF; /* Pale Brown background on hover */
+}
+
+li input[type="checkbox"] {
+    margin-right: 10px;
+}
